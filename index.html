@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validated Login Form</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+</head>
+<body>
+	<div class="container">
+		<h1 class="label">User Login</h1>
+		<form class="login_form" action="home.html" name="form" onsubmit="return validated()">
+			<div class="font">Username</div>
+			<input autocomplete="off" type="text" name="email" placeholder="Enter your username here">
+			<div id="email_error">Username can't be blank</div>
+			<div id="phone_error">Username must be of 5 digits and above</div>
+			<div class="font font2">Password</div>
+			<div>
+			<input type="password" name="password" id="password" placeholder="Enter your password here">
+			<span class="material-symbols-outlined" id="icon">password</span>
+		</div>
+			<div id="pass_error">Please fill up your Password</div>
+			<div id="pass_size">Password must be greater than 6 digits</div>
+			<button type="submit" >Login</button>
+		</form>
+	</div>	
+	<script src="valid.js"></script>
+</body>
+</html>
